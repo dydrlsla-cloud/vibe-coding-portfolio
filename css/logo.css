@@ -1,0 +1,134 @@
+/* BIGAutosys animated logo */
+
+.logo--animated {
+  display: flex;
+  align-items: center;
+}
+
+.logo__svg {
+  height: 42px;
+  width: auto;
+  display: block;
+  overflow: visible;
+}
+
+.logo--footer .logo__svg {
+  height: 36px;
+}
+
+.logo__part {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.logo__part--big {
+  animation: logoPartIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.logo__part--autosys {
+  animation: logoPartIn 1.2s 0.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.logo__autosys-fill {
+  fill: #F58025;
+}
+
+.logo__autosys-shine {
+  fill: url(#logoShineGradient);
+  opacity: 0;
+  animation: logoShineSweep 2.8s ease-in-out 1s infinite;
+}
+
+.logo--animated:hover .logo__svg {
+  transform: scale(1.06);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.logo--animated .logo__svg {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.logo--animated:hover .logo__autosys-fill {
+  filter: drop-shadow(0 0 12px rgba(245, 128, 37, 0.65));
+  transition: filter 0.4s ease;
+}
+
+.logo--animated .logo__part--autosys {
+  animation: logoPartIn 1.2s 0.15s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+             logoPulseGlow 3s ease-in-out 1.5s infinite;
+}
+
+@keyframes logoPartIn {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.88);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoShineSweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  15% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  55% {
+    opacity: 0.9;
+    transform: translateX(4px);
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+}
+
+@keyframes logoPulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 rgba(245, 128, 37, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(245, 128, 37, 0.4));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo__part--big,
+  .logo__part--autosys {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .logo__autosys-shine {
+    animation: none;
+    opacity: 0;
+  }
+
+  .logo--animated:hover .logo__svg {
+    transform: none;
+  }
+}
+
+.logo--footer .logo__part--big,
+.logo--footer .logo__part--autosys {
+  animation: none;
+  opacity: 1;
+  transform: none;
+  filter: none;
+}

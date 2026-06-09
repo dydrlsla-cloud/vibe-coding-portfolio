@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="빅오토시스(BIGAutosys) - PLC, HMI, SCADA 산업자동화 전문기업">
+  <title>빅오토시스 | BIGAutosys - 산업자동화 전문기업</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo logo--animated" aria-label="BIGAutosys 홈">
+        <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 44" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoShineGradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="objectBoundingBox">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="logo__part logo__part--big">
+            <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#6c757d">BIG</text>
+          </g>
+          <g class="logo__part logo__part--autosys">
+            <text x="52" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" class="logo__autosys-fill">Autosys</text>
+            <text x="52" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" class="logo__autosys-shine" aria-hidden="true">Autosys</text>
+          </g>
+        </svg>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">HOME</a></li>
+          <li><a href="#about" class="nav__link">ABOUT</a></li>
+          <li><a href="#solutions" class="nav__link">SOLUTIONS</a></li>
+          <li><a href="#portfolio" class="nav__link">PORTFOLIO</a></li>
+          <li><a href="#partners" class="nav__link">PARTNERS</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">견적요청</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__badge" data-animate="fade-up">Industrial Automation Expert</div>
+        <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+          산업 자동화의 미래를<br>
+          <span class="gradient-text">선도합니다</span>
+        </h1>
+        <p class="hero__desc" data-animate="fade-up" data-delay="200">
+          PLC, HMI, SCADA 기반 FA·PA·BA·EA 전문 솔루션 — 빅오토시스(BIGAutosys)
+        </p>
+        <div class="hero__actions" data-animate="fade-up" data-delay="300">
+          <a href="#contact" class="btn btn--primary">견적 요청하기</a>
+          <a href="#portfolio" class="btn btn--outline">포트폴리오 보기</a>
+        </div>
+        <div class="hero__stats" data-animate="fade-up" data-delay="400">
+          <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">업계 경력</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">100+</span>
+            <span class="stat__label">프로젝트 수행</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">50+</span>
+            <span class="stat__label">주요 고객사</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content" data-animate="fade-up">
+            <span class="section__tag">About Us</span>
+            <h2 class="section__title">주식회사 빅오토시스</h2>
+            <p>
+              산업자동화 분야 <strong>10년 이상</strong>의 현장·설계·구축 경험을 바탕으로,
+              2021년 빅오토시스를 설립하고 2024년 주식회사 빅오토시스로 법인 전환하였습니다.
+              PLC·HMI·SCADA 시스템 구축부터 ERP/MES 연동까지 End-to-End 자동화 솔루션을 제공합니다.
+            </p>
+            <div class="about__philosophy">
+              <div class="philosophy-card">
+                <h4>경영 철학</h4>
+                <p>현장 중심의 문제 해결</p>
+              </div>
+              <div class="philosophy-card">
+                <h4>비전</h4>
+                <p>스마트 팩토리의 글로벌 표준</p>
+              </div>
+              <div class="philosophy-card">
+                <h4>미션</h4>
+                <p>자동화 시스템으로 고객 생산성 극대화</p>
+              </div>
+              <div class="philosophy-card">
+                <h4>연혁</h4>
+                <p>2016~2021 SI·자동화 프로젝트 → 2021 설립 → 2024.12 법인 전환</p>
+              </div>
+            </div>
+            <div class="about__info">
+              <div class="about__info-group">
+                <h4 class="about__info-heading">주식회사 빅오토시스 (법인)</h4>
+                <div class="info-item">
+                  <span class="info-item__label">사업자등록번호</span>
+                  <span class="info-item__value">327-88-03308</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__label">설립일</span>
+                  <span class="info-item__value">2024.12.29</span>
+                </div>
+              </div>
+              <div class="about__info-group about__info-group--secondary">
+                <h4 class="about__info-heading">빅오토시스 (개인사업자 · 운영 중)</h4>
+                <div class="info-item">
+                  <span class="info-item__label">사업자등록번호</span>
+                  <span class="info-item__value">517-34-00973</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__label">설립일</span>
+                  <span class="info-item__value">2021.05.04</span>
+                </div>
+                <p class="about__info-note">※ 2024년 법인 설립, 기존 개인사업 이력·실적을 승계합니다.</p>
+              </div>
+              <div class="about__info-group">
+                <h4 class="about__info-heading">공통 정보</h4>
+                <div class="info-item">
+                  <span class="info-item__label">주소</span>
+                  <span class="info-item__value">경기도 안양시 만안구 덕천로 152번길 25, A동 1212B호<br>(안양아이에스BIZ타워센트럴)</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-item__label">연락처</span>
+                  <span class="info-item__value">
+                    <a href="tel:+821034012344">+82 10-3401-2344</a><br>
+                    <span class="info-item__hours">월–금 09:00 – 18:00</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__visual" data-animate="fade-up" data-delay="200">
+            <div class="about__card">
+              <div class="about__card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3>Human Machine Interface</h3>
+              <p>Patented Technology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Areas -->
+    <section class="section business" id="business">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <span class="section__tag">Business Areas</span>
+          <h2 class="section__title">사업 영역</h2>
+          <p class="section__subtitle section__subtitle--nowrap">PLC + HMI + SCADA 통합 제어 시스템 — 클릭 시 해당 포트폴리오로 이동</p>
+        </div>
+        <div class="business__grid">
+          <article class="business-card" data-filter-target="auto" data-animate="fade-up" data-delay="0">
+            <span class="business-card__code">FA</span>
+            <img src="images/business_fa.svg" alt="" class="business-card__img">
+            <h3>Factory<br>Automation</h3>
+            <p>공장 자동화</p>
+          </article>
+          <article class="business-card" data-filter-target="energy" data-animate="fade-up" data-delay="100">
+            <span class="business-card__code">BA</span>
+            <img src="images/business_ba.svg" alt="" class="business-card__img">
+            <h3>Building<br>Automation</h3>
+            <p>빌딩 자동화</p>
+          </article>
+          <article class="business-card" data-filter-target="energy" data-animate="fade-up" data-delay="200">
+            <span class="business-card__code">EA</span>
+            <img src="images/business_ea.svg" alt="" class="business-card__img">
+            <h3>Environment<br>Automation</h3>
+            <p>환경 자동화</p>
+          </article>
+          <article class="business-card" data-filter-target="pharma" data-animate="fade-up" data-delay="300">
+            <span class="business-card__code">PA</span>
+            <img src="images/business_pa.svg" alt="" class="business-card__img">
+            <h3>Plant<br>Automation</h3>
+            <p>플랜트 자동화</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="section solutions" id="solutions">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <span class="section__tag">Solutions</span>
+          <h2 class="section__title">제품 및 솔루션</h2>
+        </div>
+
+        <!-- Autonics SCADA Master -->
+        <article class="solution-block solution-block--wide-media" data-brand="autonics" data-animate="fade-up">
+          <div class="solution-block__content">
+            <div class="solution-block__logo-wrap">
+              <img src="images/brand_autonics.png" alt="Autonics" class="solution-block__logo">
+            </div>
+            <h3 class="solution-block__title">SCADA Master</h3>
+            <p class="solution-block__desc">
+              현장 장치를 통합 관리하고 데이터를 수집·분석하여 공정 효율을 극대화하는 SCADA 시스템입니다.
+              실시간 모니터링, 레시피 제어, OPC UA·MQTT·DBMS 연동, SVG 기반 고품질 그래픽을 지원합니다.
+              프로그램 및 자료 문의는 <a href="mailto:ykkim@bigautosys.co.kr">ykkim@bigautosys.co.kr</a>로 요청해 주세요.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag">실시간 모니터링</span>
+              <span class="feature-tag">SVG 그래픽</span>
+              <span class="feature-tag">OPC UA</span>
+              <span class="feature-tag">MQTT</span>
+              <span class="feature-tag">DBMS</span>
+              <span class="feature-tag">네트워크 이중화</span>
+            </div>
+            <div class="solution-block__actions">
+              <a href="https://www.autonics.com/kr/main" class="btn btn--outline btn--brand" target="_blank" rel="noopener noreferrer">Autonics 공식 사이트</a>
+            </div>
+          </div>
+          <div class="solution-block__media-column">
+            <video class="solution-block__video solution-block__video--large" autoplay muted loop playsinline preload="metadata">
+              <source src="videos/scada_master.mp4" type="video/mp4">
+            </video>
+            <div class="solution-block__features solution-block__features--row">
+              <div class="feature-card">
+                <h4>Supervisory</h4>
+                <ul>
+                  <li>실시간 모니터링(감시)</li>
+                  <li>SVG·고품질 그래픽</li>
+                  <li>직관적인 UX/UI</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>Control</h4>
+                <ul>
+                  <li>RECIPE 관리</li>
+                  <li>네트워크 이중화</li>
+                  <li>인증·규격 대응</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>Data Acquisition</h4>
+                <ul>
+                  <li>DBMS 연동</li>
+                  <li>OPC UA 지원</li>
+                  <li>MQTT·IIoT</li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section">
+              <h4 class="catalog-section__title">자료 다운로드</h4>
+              <div class="catalog-links">
+                <a href="catalog/Autonics/SCADAMaster_KR.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" download>
+                  <svg class="catalog-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  SCADA Master 카탈로그
+                </a>
+                <a href="catalog/Autonics/HMI_카타로그.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" download>
+                  <svg class="catalog-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  HMI 카탈로그
+                </a>
+                <a href="catalog/Autonics/iTP 브로슈어.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" download>
+                  <svg class="catalog-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  iTP HMI 브로슈어
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- EasyView -->
+        <article class="solution-block solution-block--wide-media solution-block--reverse" id="solutions-easyview" data-brand="easyview" data-animate="fade-up">
+          <div class="solution-block__content">
+            <div class="solution-block__logo-wrap solution-block__logo-wrap--wide">
+              <img src="images/brand_weintek.png" alt="WEINTEK EasyView" class="solution-block__logo">
+            </div>
+            <h3 class="solution-block__title">EasyView — Advanced HMI Solution</h3>
+            <p class="solution-block__desc">
+              강력한 성능과 합리적인 비용을 갖춘 터치 패널 솔루션으로,
+              300종 이상의 통신 드라이버와 MQTT 기반 IIoT·원격 모니터링을 지원합니다.
+              다양한 PLC 및 컨트롤러와 완벽하게 호환됩니다.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag">300+ 통신 드라이버</span>
+              <span class="feature-tag">IIoT (MQTT)</span>
+              <span class="feature-tag">원격 모니터링</span>
+              <span class="feature-tag">IP65/IP66</span>
+            </div>
+            <div class="solution-block__actions">
+              <a href="https://easyview.kr/new2026/" class="btn btn--outline btn--brand" target="_blank" rel="noopener noreferrer">EasyView 공식 사이트</a>
+            </div>
+          </div>
+          <div class="solution-block__media-column">
+            <img src="images/product_hmi.svg" alt="EasyView HMI" class="solution-block__product-img solution-block__product-img--large">
+            <div class="solution-block__features solution-block__features--row">
+              <div class="feature-card">
+                <h4>XE Series</h4>
+                <ul>
+                  <li>IP65/IP66 등급</li>
+                  <li>Cortex A8 1GHz</li>
+                  <li>300+ 통신 드라이버</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>IP Series</h4>
+                <ul>
+                  <li>경제형 HMI</li>
+                  <li>IP65 방수방진</li>
+                  <li>고해상도 LCD</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>cMT Series</h4>
+                <ul>
+                  <li>Cortex A9 1GHz</li>
+                  <li>게이트웨이 통신</li>
+                  <li>원격 지원</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="solution-block__span">
+            <h4 class="solution-block__products-heading">
+              EasyView HMI Series
+              <span>HMI 기반 데이터 통합 솔루션 — 초고속 성능, 편리한 기능, 경제적인 가격</span>
+            </h4>
+            <div class="products__grid">
+              <article class="product-card">
+                <div class="product-card__header">
+                  <span class="product-card__series">XE Series</span>
+                  <span class="product-card__badge">Premium</span>
+                </div>
+                <p class="product-card__desc">열악한 현장이나 크고 복잡한 산업 제어 환경에 최적. IP65/IP66 등급, CE 인증.</p>
+                <ul class="product-card__specs">
+                  <li>Cortex A8 1GHz CPU</li>
+                  <li>9.7" 1024×768 고해상도</li>
+                  <li>300+ 통신 드라이버</li>
+                </ul>
+              </article>
+              <article class="product-card">
+                <div class="product-card__header">
+                  <span class="product-card__series">IP Series</span>
+                  <span class="product-card__badge product-card__badge--green">Economy</span>
+                </div>
+                <p class="product-card__desc">경제형 HMI로 복잡한 산업 환경에 쉽게 적용. IP65 방수방진.</p>
+                <ul class="product-card__specs">
+                  <li>Cortex A8 600MHz, 128MB RAM</li>
+                  <li>1024×600 LCD, 70° 시야각</li>
+                  <li>1600만 색 컬러</li>
+                </ul>
+                <a href="catalog/Easyview/iP_Series_2026.pdf" class="product-card__catalog" target="_blank" rel="noopener noreferrer" download>IP Series 카탈로그</a>
+              </article>
+              <article class="product-card">
+                <div class="product-card__header">
+                  <span class="product-card__series">cMT Series</span>
+                  <span class="product-card__badge product-card__badge--purple">Advanced</span>
+                </div>
+                <p class="product-card__desc">고연동성, 게이트웨이 통신, 원격지원. 다양한 플랫폼 지원.</p>
+                <ul class="product-card__specs">
+                  <li>Cortex A9 1GHz CPU</li>
+                  <li>1024×768 고해상도</li>
+                  <li>무선·게이트웨이 통신</li>
+                </ul>
+                <a href="catalog/Easyview/Brochure-cMTX_KR_202601.pdf" class="product-card__catalog" target="_blank" rel="noopener noreferrer" download>cMT Series 카탈로그</a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <!-- zenon -->
+        <article class="solution-block solution-block--wide-media" data-brand="zenon" data-animate="fade-up">
+          <div class="solution-block__content">
+            <div class="solution-block__logo-wrap solution-block__logo-wrap--wide">
+              <img src="images/brand_copadata.png" alt="COPA-DATA zenon" class="solution-block__logo">
+            </div>
+            <h3 class="solution-block__title">zenon — 더 편리한 삶을 위한 설계</h3>
+            <p class="solution-block__desc">
+              제조 및 인프라 장비의 엔지니어링과 자동화 운영을 손쉽게 만들어주는 소프트웨어 플랫폼으로,
+              제약·에너지·자동차 산업에 특화된 고성능 자동화 솔루션을 제공합니다.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag">FDA Part 11</span>
+              <span class="feature-tag">IEC 61850</span>
+              <span class="feature-tag">에너지 산업</span>
+              <span class="feature-tag">LMS</span>
+            </div>
+            <div class="solution-block__actions">
+              <a href="https://www.copadata.com/ko/" class="btn btn--outline btn--brand" target="_blank" rel="noopener noreferrer">COPA-DATA 공식 사이트</a>
+            </div>
+          </div>
+          <div class="solution-block__media-column">
+            <img src="images/product_zenon.svg" alt="zenon Platform" class="solution-block__product-img solution-block__product-img--large">
+            <div class="solution-block__features solution-block__features--row">
+              <div class="feature-card">
+                <h4>Features</h4>
+                <ul>
+                  <li>직관적 HMI/SCADA</li>
+                  <li>다국어·다플랫폼</li>
+                  <li>고가용성 아키텍처</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>개발환경</h4>
+                <ul>
+                  <li>통합 엔지니어링 툴</li>
+                  <li>객체 지향 설계</li>
+                  <li>템플릿·라이브러리</li>
+                </ul>
+              </div>
+              <div class="feature-card">
+                <h4>네트워크·LMS</h4>
+                <ul>
+                  <li>분산·이중화 네트워크</li>
+                  <li>IEC 61850 대응</li>
+                  <li>LMS 라인관리</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">포트폴리오</h2>
+          <p class="section__subtitle">전국 다수 현장 중 대표 프로젝트 — 다양한 산업 분야 자동화 실적</p>
+        </div>
+
+        <div class="filter-controls" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="pharma">제약/바이오</button>
+          <button class="filter-btn" data-filter="auto">자동차/제조</button>
+          <button class="filter-btn" data-filter="energy">에너지/환경</button>
+          <button class="filter-btn" data-filter="others">기타</button>
+        </div>
+
+        <div class="portfolio__grid">
+          <article class="portfolio-item" data-category="pharma" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_hanmi.jpg" alt="한미약품">
+            <div class="portfolio-item__overlay">
+              <h4>한미약품</h4>
+              <p>수처리 모니터링</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="pharma" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_dongkuk.jpg" alt="동국제약">
+            <div class="portfolio-item__overlay">
+              <h4>동국제약</h4>
+              <p>수처리 시스템</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="pharma" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_reyon.jpg" alt="이연제약">
+            <div class="portfolio-item__overlay">
+              <h4>이연제약</h4>
+              <p>생산 설비 모니터링</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="pharma" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_sdi_oled.jpg" alt="삼성 SDI">
+            <div class="portfolio-item__overlay">
+              <h4>삼성 SDI</h4>
+              <p>설비 제어</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="pharma" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_binex.jpg" alt="바이넥스">
+            <div class="portfolio-item__overlay">
+              <h4>바이넥스</h4>
+              <p>중량 시스템</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="auto" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_hyundai.jpg" alt="현대자동차">
+            <div class="portfolio-item__overlay">
+              <h4>현대자동차 (아산)</h4>
+              <p>공조 제어</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="auto" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_seoyon.jpg" alt="서연이화">
+            <div class="portfolio-item__overlay">
+              <h4>서연이화</h4>
+              <p>충칭공장 플라스틱 사출라인</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="auto" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_doosan.jpg" alt="두산현대인프라코어">
+            <div class="portfolio-item__overlay">
+              <h4>두산현대인프라코어</h4>
+              <p>무인지게차(AGV) 시스템</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="auto" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_haesung.jpg" alt="해성디에스">
+            <div class="portfolio-item__overlay">
+              <h4>해성디에스</h4>
+              <p>노광기 제어</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="auto" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_neoflam.jpg" alt="네오플램">
+            <div class="portfolio-item__overlay">
+              <h4>네오플램</h4>
+              <p>도장 라인 제어</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="energy" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_ecopro.jpg" alt="에코프로비엠">
+            <div class="portfolio-item__overlay">
+              <h4>에코프로비엠</h4>
+              <p>유틸리티 제어</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="energy" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_lpg.jpg" alt="한국 LPG 사업단">
+            <div class="portfolio-item__overlay">
+              <h4>한국 LPG 사업단</h4>
+              <p>배관망 모니터링</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="energy" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_hydrogen.jpg" alt="제주 그린 에너지">
+            <div class="portfolio-item__overlay">
+              <h4>제주 그린 에너지</h4>
+              <p>수소 충전소</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="energy" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_kepco.jpg" alt="한국전력공사">
+            <div class="portfolio-item__overlay">
+              <h4>한국전력공사 (KEPCO)</h4>
+              <p>SF6 가스 분석</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="energy" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_unist.jpg" alt="UNIST">
+            <div class="portfolio-item__overlay">
+              <h4>UNIST</h4>
+              <p>가스 캐비닛</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="others" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_hy.jpg" alt="한국야쿠르트">
+            <div class="portfolio-item__overlay">
+              <h4>한국야쿠르트 (hy)</h4>
+              <p>냉동창고</p>
+            </div>
+          </article>
+          <article class="portfolio-item" data-category="others" data-animate="fade-up">
+            <img class="portfolio-item__img" src="images/portfolio_chamfre.jpg" alt="참프레">
+            <div class="portfolio-item__overlay">
+              <h4>참프레</h4>
+              <p>냉동창고</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section partners" id="partners">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <span class="section__tag">Partners</span>
+          <h2 class="section__title">주요 고객사</h2>
+        </div>
+        <div class="partners__grid">
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_sdi.svg" alt="삼성 SDI">
+            </div>
+            <p>삼성 SDI</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_hyundai.svg" alt="현대자동차">
+            </div>
+            <p>현대자동차</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/logo_hanwha.svg" alt="한화에어로스페이스">
+            </div>
+            <p>한화에어로스페이스</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_kepco.svg" alt="한국전력공사">
+            </div>
+            <p>한국전력공사</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/logo_keco.svg" alt="한국환경공단">
+            </div>
+            <p>한국환경공단</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_lpg.svg" alt="한국 LPG 사업관리원">
+            </div>
+            <p>한국 LPG 사업관리원</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_hanmi.svg" alt="한미약품">
+            </div>
+            <p>한미약품</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_dongkuk.svg" alt="동국제약">
+            </div>
+            <p>동국제약</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_seoyon.svg" alt="서연이화">
+            </div>
+            <p>서연이화</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_haesung.svg" alt="해성디에스">
+            </div>
+            <p>해성디에스</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/partner_unist.svg" alt="UNIST">
+            </div>
+            <p>UNIST</p>
+          </div>
+          <div class="partner-card" data-animate="fade-up">
+            <div class="partner-card__logo-wrap">
+              <img src="images/logo_theyireh.svg" alt="THE iRE (주)더이레" class="partner-card__logo--wide">
+            </div>
+            <p>THE iRE (주)더이레</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info" data-animate="fade-up">
+            <span class="section__tag">Contact</span>
+            <h2 class="section__title">견적 요청</h2>
+            <p>프로젝트 문의나 견적 요청을 남겨주시면 빠르게 답변드리겠습니다.</p>
+            <div class="contact__details">
+              <a href="mailto:ykkim@bigautosys.co.kr" class="contact__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                ykkim@bigautosys.co.kr
+              </a>
+              <a href="tel:+821034012344" class="contact__detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +82 10-3401-2344
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/ykkim@bigautosys.co.kr" method="POST" data-animate="fade-up" data-delay="200" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">성명 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="홍길동" autocomplete="name">
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">이메일 <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email">
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="company">회사명</label>
+              <input type="text" id="company" name="company" placeholder="회사명 (선택)">
+            </div>
+            <div class="form-group">
+              <label for="subject">문의 유형</label>
+              <select id="subject" name="subject">
+                <option value="견적 요청">견적 요청</option>
+                <option value="SCADA Master 문의">SCADA Master 문의</option>
+                <option value="zenon 문의">zenon 문의</option>
+                <option value="EasyView HMI 문의">EasyView HMI 문의</option>
+                <option value="기타 문의">기타 문의</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">메시지 <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="문의 내용을 입력해 주세요."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacy" required>
+                <span class="checkbox-custom"></span>
+                <span>개인정보 수집 및 이용에 동의합니다. <button type="button" class="link-btn" id="privacyToggle">약관 보기</button></span>
+              </label>
+              <span class="form-error" id="privacyError"></span>
+            </div>
+            <div class="privacy-box" id="privacyBox" hidden>
+              <p><strong>개인정보 수집 및 이용 동의</strong></p>
+              <ul>
+                <li>수집목적: 문의 및 견적 요청 접수</li>
+                <li>수집항목: 성명, 이메일, 연락처, 회사명</li>
+                <li>보유기간: 수집 목적 달성 시까지 (법령에 따른 보존 기간 제외)</li>
+              </ul>
+              <p class="privacy-box__note">동의를 거부할 경우 문의 서비스 이용이 불가능합니다.</p>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">SEND MESSAGE</span>
+              <span class="btn__loader" hidden></span>
+            </button>
+            <div class="form-status" id="formStatus" role="alert" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--animated logo--footer" aria-label="BIGAutosys 홈">
+          <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 44" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoShineGradientFooter" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#F58025" stop-opacity="0"/>
+                <stop offset="45%" stop-color="#FFD4A8" stop-opacity="1"/>
+                <stop offset="55%" stop-color="#FFD4A8" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#F58025" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="logo__part logo__part--big">
+              <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#6c757d">BIG</text>
+            </g>
+            <g class="logo__part logo__part--autosys">
+              <text x="52" y="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#F58025">Autosys</text>
+            </g>
+          </svg>
+        </a>
+        <p>산업자동화의 미래를 선도합니다.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#solutions">Solutions</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; 2021–2026 주식회사 빅오토시스 (BIGAutosys). All rights reserved.<br>사업자등록번호 327-88-03308 · 개인사업자 517-34-00973</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Indicator -->
+  <a href="#about" class="scroll-indicator scroll-indicator--dark" id="scrollIndicator" aria-label="아래로 스크롤">
+    <span class="scroll-indicator__text">Scroll</span>
+    <span class="scroll-indicator__line" aria-hidden="true"></span>
+  </a>
+
+  <!-- Portfolio Lightbox -->
+  <div class="lightbox" id="portfolioLightbox" hidden aria-hidden="true">
+    <div class="lightbox__backdrop"></div>
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button type="button" class="lightbox__close" aria-label="닫기">&times;</button>
+      <img class="lightbox__img" src="" alt="">
+      <div class="lightbox__caption">
+        <h4 class="lightbox__title" id="lightboxTitle"></h4>
+        <p class="lightbox__desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/portfolio-lightbox.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/scroll-indicator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

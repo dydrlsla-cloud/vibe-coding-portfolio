@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGAutosys - Leading the Future of Industrial Automation</title>
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="BIGAutosys Logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#business">Business</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <a href="index.html">KR</a>
+                    <span>|</span>
+                    <a href="index_en.html" class="active">EN</a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Leading the Future of<br>Industrial Automation</h1>
+            <p>Expert solutions in FA, PA, BA, and EA based on PLC, HMI, and SCADA technologies.</p>
+            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Philosophy</h3>
+                    <p>Field-oriented problem solving.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Vision</h3>
+                    <p>Global Standard for Smart Factories.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Mission</h3>
+                    <p>Maximizing customer productivity with automation systems.</p>
+                </div>
+                <div class="about-item">
+                    <h3>History</h3>
+                    <p>Established 2021<br>(Incorporated 2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Areas -->
+    <section id="business" class="section business bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Business Areas</h2>
+                <div class="line"></div>
+                <p class="section-desc">Integrated control systems using PLC + HMI + SCADA, Big-Health Suite, and EOS.
+                </p>
+            </div>
+            <div class="business-grid">
+                <div class="business-card" data-filter-target="auto">
+                    <div class="icon">FA</div>
+                    <h3>Factory Automation</h3>
+                </div>
+                <div class="business-card" data-filter-target="energy">
+                    <div class="icon">BA</div>
+                    <h3>Building Automation</h3>
+                </div>
+                <div class="business-card" data-filter-target="energy">
+                    <div class="icon">EA</div>
+                    <h3>Environment Automation</h3>
+                </div>
+                <div class="business-card" data-filter-target="pharma">
+                    <div class="icon">PA</div>
+                    <h3>Plant Automation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Solutions -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Products & Solutions</h2>
+                <div class="line"></div>
+                <p class="section-desc">Innovative technologies driving the future of manufacturing.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-item">
+                    <video class="product-img" autoplay muted loop playsinline controls>
+                        <source src="videos/scada_master.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="product-text">
+                        <h3>Autonics SCADA Master</h3>
+                        <p class="subtitle">Comprehensive Management Software</p>
+                        <p>A SCADA master system that integrates diverse onsite devices, collects and analyzes data to
+                            maximize process efficiency.</p>
+                        <ul class="feature-list">
+                            <li>Intuitive UI/UX Design</li>
+                            <li>Real-time Data Monitoring</li>
+                            <li>Various Communication Drivers</li>
+                        </ul>
+                        <a href="#" class="btn-download" onclick="alert('Coming Soon.')">Catalogue Download</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="images/product_hmi.png" alt="EasyView HMI" class="product-img">
+                    <div class="product-text">
+                        <h3>EasyView</h3>
+                        <p class="subtitle">Advanced HMI Solution</p>
+                        <p>Cost-effective touch panel solution with powerful performance, compatible with various PLCs
+                            and controllers.</p>
+                        <ul class="feature-list">
+                            <li>Rich Library Support</li>
+                            <li>IIoT Functionality (MQTT, etc.)</li>
+                            <li>Remote Monitoring</li>
+                        </ul>
+                        <a href="#" class="btn-download" onclick="alert('Coming Soon.')">Catalogue Download</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="images/product_zenon.png" alt="Zenon HMI/SCADA" class="product-img">
+                    <div class="product-text">
+                        <h3>Zenon</h3>
+                        <p class="subtitle">High Performance HMI/SCADA</p>
+                        <p>Powerful software platform by COPA-DATA, providing specialized high-performance automation
+                            solutions for Pharma, Energy, and Automotive industries.</p>
+                        <ul class="feature-list">
+                            <li>FDA 21 CFR Part 11 Compliant</li>
+                            <li>IEC 61850 Support</li>
+                            <li>Flexible Engineering Environment</li>
+                        </ul>
+                        <a href="#" class="btn-download" onclick="alert('Coming Soon.')">Catalogue Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pharma">Pharma & Bio</button>
+                <button class="filter-btn" data-filter="auto">Auto & Mfg</button>
+                <button class="filter-btn" data-filter="energy">Energy & Env</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Pharma & Bio -->
+                <div class="portfolio-item" data-category="pharma">
+                    <img src="images/portfolio_hanmi.jpg" alt="Hanmi Pharm">
+                    <div class="overlay">
+                        <h4>Hanmi Pharm</h4>
+                        <p>Water Treatment Monitoring</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="pharma">
+                    <img src="images/portfolio_dongkuk.jpg" alt="Dongkook Pharm">
+                    <div class="overlay">
+                        <h4>Dongkook Pharm</h4>
+                        <p>Water Treatment System</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="pharma">
+                    <img src="images/portfolio_reyon.jpg" alt="Reyon Pharm">
+                    <div class="overlay">
+                        <h4>Reyon Pharm</h4>
+                        <p>Production Facility Monitoring</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="pharma">
+                    <img src="images/portfolio_sdi_oled.jpg" alt="Samsung SDI">
+                    <div class="overlay">
+                        <h4>Samsung SDI</h4>
+                        <p>Facility Control</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="pharma">
+                    <img src="images/portfolio_binex.jpg" alt="Binex">
+                    <div class="overlay">
+                        <h4>Binex</h4>
+                        <p>Weight System</p>
+                    </div>
+                </div>
+
+                <!-- Auto & Mfg -->
+                <div class="portfolio-item" data-category="auto">
+                    <img src="images/portfolio_hyundai.jpg" alt="Hyundai Motor">
+                    <div class="overlay">
+                        <h4>Hyundai Motor (Asan)</h4>
+                        <p>HVAC Control</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="auto">
+                    <img src="images/portfolio_seoyon.jpg" alt="Seoyon E-Hwa">
+                    <div class="overlay">
+                        <h4>Seoyon E-Hwa</h4>
+                        <p>Chongqing Factory Plastic Injection Line</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="auto">
+                    <img src="images/portfolio_doosan.jpg" alt="Doosan Hyundai Infracore">
+                    <div class="overlay">
+                        <h4>Doosan Hyundai Infracore</h4>
+                        <p>AGV System</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="auto">
+                    <img src="images/portfolio_haesung.jpg" alt="Haesung DS">
+                    <div class="overlay">
+                        <h4>Haesung DS</h4>
+                        <p>Exposure Machine Control</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="auto">
+                    <img src="images/portfolio_neoflam.jpg" alt="Neoflam">
+                    <div class="overlay">
+                        <h4>Neoflam</h4>
+                        <p>Painting Line Control</p>
+                    </div>
+                </div>
+
+                <!-- Energy & Env -->
+                <div class="portfolio-item" data-category="energy">
+                    <img src="images/portfolio_ecopro.jpg" alt="EcoPro BM">
+                    <div class="overlay">
+                        <h4>EcoPro BM</h4>
+                        <p>Utility Control</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="energy">
+                    <img src="images/portfolio_lpg.jpg" alt="Korea LPG Agency">
+                    <div class="overlay">
+                        <h4>Korea LPG Agency</h4>
+                        <p>Pipeline Network Monitoring</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="energy">
+                    <img src="images/portfolio_hydrogen.jpg" alt="Jeju Green Energy">
+                    <div class="overlay">
+                        <h4>Jeju Green Energy</h4>
+                        <p>Hydrogen Charging Station</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="energy">
+                    <img src="images/portfolio_kepco.jpg" alt="KEPCO">
+                    <div class="overlay">
+                        <h4>KEPCO</h4>
+                        <p>SF6 Gas Analysis</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="energy">
+                    <img src="images/portfolio_unist.jpg" alt="UNIST">
+                    <div class="overlay">
+                        <h4>UNIST</h4>
+                        <p>Gas Cabinet Control</p>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="portfolio-item" data-category="others">
+                    <img src="images/portfolio_hy.jpg" alt="Korea Yakult">
+                    <div class="overlay">
+                        <h4>hy (Korea Yakult)</h4>
+                        <p>Frozen Warehouse</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="others">
+                    <img src="images/portfolio_chamfre.jpg" alt="Chamfre">
+                    <div class="overlay">
+                        <h4>Chamfre</h4>
+                        <p>Frozen Warehouse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="section partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Partners</h2>
+                <div class="line"></div>
+            </div>
+            <div class="partners-grid">
+                <!-- Tier 1: Major Corporations -->
+                <div class="partner-card">
+                    <img src="images/portfolio_sdi_oled.svg" alt="Samsung SDI">
+                    <p>Samsung SDI</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_hyundai.svg" alt="Hyundai Motor">
+                    <p>Hyundai Motor</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/logo_hanwha.svg" alt="Hanwha Aerospace">
+                    <p>Hanwha Aerospace</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_kepco.svg" alt="KEPCO">
+                    <p>KEPCO</p>
+                </div>
+
+                <!-- Tier 2: Public/Pharma/Energy -->
+                <div class="partner-card">
+                    <img src="images/logo_keco.svg" alt="K-eco">
+                    <p>K-eco</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_lpg.svg" alt="Korea LPG Agency">
+                    <p>Korea LPG Agency</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_hanmi.svg" alt="Hanmi Pharm">
+                    <p>Hanmi Pharm</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_ecopro.svg" alt="EcoPro BM">
+                    <p>EcoPro BM</p>
+                </div>
+
+                <!-- Tier 3: Specialized/Others -->
+                <div class="partner-card">
+                    <img src="images/portfolio_dongkuk.svg" alt="Dongkook Pharm">
+                    <p>Dongkook Pharm</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/logo_theyireh.svg" alt="The Yireh">
+                    <p>The Yireh</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_seoyon.svg" alt="Seoyon E-Hwa">
+                    <p>Seoyon E-Hwa</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_haesung.svg" alt="Haesung DS">
+                    <p>Haesung DS</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_unist.svg" alt="UNIST">
+                    <p>UNIST</p>
+                </div>
+                <div class="partner-card">
+                    <img src="images/portfolio_hy.svg" alt="Korea Yakult">
+                    <p>hy (Korea Yakult)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>BIGAutosys Co., Ltd.</h3>
+                    <p>Leading the way in industrial automation solutions.</p>
+                    <!-- Google Maps Placeholder -->
+                    <div class="map-placeholder">
+                        <p>Google Maps Area</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="position">Job Title</label>
+                            <input type="text" id="position" placeholder="Job Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+82 10-0000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Inquiry Message</label>
+                        <textarea id="message" rows="5" placeholder="Please describe your project details."
+                            required></textarea>
+                    </div>
+                    <div class="form-group file-group">
+                        <label for="file">Attachment</label>
+                        <input type="file" id="file" class="file-input">
+                        <p class="file-hint">* Please attach files directly in your email client after clicking send.
+                        </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Request (Open Mail App)</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>BIGAutosys Co., Ltd.</strong> | CEO: Cheol-soo Kim | Biz Reg No: 000-00-00000</p>
+                <p>Address: 000, OO-daero, OO-gu, Seoul, Korea | Phone: +82-2-0000-0000 | Email: info@bigautosys.com</p>
+                <p class="copyright">&copy; 2025 BIGAutosys Co., Ltd. All rights reserved.
+                    <a href="#" class="privacy-link"><strong>Privacy Policy</strong></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

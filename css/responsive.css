@@ -1,0 +1,260 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --text-6xl: 3rem;
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --space-4xl: 4rem;
+  }
+
+  .expertise__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .solution-block,
+  .solution-block--reverse {
+    flex-direction: column;
+    gap: var(--space-2xl);
+  }
+
+  .solution-block--reverse .solution-block__content,
+  .solution-block--reverse .solution-block__media-column {
+    order: unset;
+  }
+
+  .solution-block__content {
+    max-width: none;
+  }
+
+  .solution-block__features--row {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-block__video--large {
+    min-height: 200px;
+  }
+
+  .section__subtitle--nowrap {
+    white-space: normal;
+  }
+
+  .products__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference__grid,
+  .business__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__philosophy {
+    grid-template-columns: 1fr;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__visual {
+    order: -1;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats {
+    gap: var(--space-2xl);
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --container-padding: 1.25rem;
+    --text-6xl: 2.25rem;
+    --text-4xl: 1.75rem;
+    --text-3xl: 1.5rem;
+    --space-4xl: 3rem;
+    --space-3xl: 2.5rem;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: calc(var(--z-header) + 1);
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(320px, 85vw);
+    height: 100vh;
+    background: var(--color-bg-secondary);
+    border-left: 1px solid var(--color-border);
+    padding: calc(var(--header-height) + var(--space-xl)) var(--space-xl) var(--space-xl);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    z-index: var(--z-header);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-lg);
+  }
+
+  .nav__link {
+    font-size: var(--text-base);
+  }
+
+  .nav__link--cta {
+    width: 100%;
+    text-align: center;
+    margin-top: var(--space-md);
+  }
+
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
+    z-index: calc(var(--z-header) - 1);
+  }
+
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-bottom: var(--space-3xl);
+  }
+
+  .hero__title {
+    font-size: var(--text-5xl);
+  }
+
+  .hero__desc {
+    font-size: var(--text-base);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section__header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .info-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .solution-block__features--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference__grid,
+  .business__grid,
+  .portfolio__grid,
+  .partners__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-controls {
+    gap: var(--space-xs);
+  }
+
+  .filter-btn {
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-xs);
+  }
+
+  .contact-form {
+    padding: var(--space-lg);
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  :root {
+    --text-6xl: 1.875rem;
+    --text-5xl: 1.625rem;
+    --container-padding: 1rem;
+  }
+
+  .logo__text {
+    font-size: var(--text-base);
+  }
+
+  .logo__icon {
+    width: 36px;
+    height: 36px;
+    font-size: var(--text-xs);
+  }
+
+  .expertise-card,
+  .product-card {
+    padding: var(--space-lg);
+  }
+
+  .reference-card {
+    padding: var(--space-lg);
+  }
+
+  .reference-card__code {
+    width: 56px;
+    height: 56px;
+    font-size: var(--text-lg);
+  }
+}
